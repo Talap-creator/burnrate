@@ -7,17 +7,17 @@ import type { Engine, Register, SessionRateLimit, SessionUsage } from 'claude-co
 
 import type { Category, Snapshot, Tokens } from '../types'
 
-const FEATURES = { band: true, guard: false }
+const FEATURES = { band: false, guard: true }
 
 // ---- band ----
 
 const ZERO: Tokens = { input: 0, cacheRead: 0, cacheWrite: 0, output: 0 }
 
-const snap = atom({ plugin: 'limits-band', key: 'snap' } as const, null)
-const lastTurn = atom({ plugin: 'limits-band', key: 'lastTurn' } as const, null)
-const total = atom({ plugin: 'limits-band', key: 'total' } as const, ZERO)
-const categories = atom({ plugin: 'limits-band', key: 'categories' } as const, [])
-const isExpanded = atom({ plugin: 'limits-band', key: 'isExpanded' } as const, false)
+const snap = atom({ plugin: 'limit-guard', key: 'snap' } as const, null)
+const lastTurn = atom({ plugin: 'limit-guard', key: 'lastTurn' } as const, null)
+const total = atom({ plugin: 'limit-guard', key: 'total' } as const, ZERO)
+const categories = atom({ plugin: 'limit-guard', key: 'categories' } as const, [])
+const isExpanded = atom({ plugin: 'limit-guard', key: 'isExpanded' } as const, false)
 
 // One accent for normal fill, two alarm tones; category hues for the context bar.
 const ACCENT = '#d97757'

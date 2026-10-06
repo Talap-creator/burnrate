@@ -1,19 +1,25 @@
 {
-  "name": "claude-mods",
-  "owner": {
-    "name": "Talap-creator"
-  },
+  "name": "burnrate",
+  "owner": { "name": "Talap-creator", "url": "https://github.com/Talap-creator" },
+  "description": "See and slow down how fast Claude Code burns your Claude.ai limits",
   "plugins": [
+    {
+      "name": "burnrate",
+      "source": "./plugins/burnrate",
+      "description": "Full mod: live limits band above the prompt plus the guard (cache watchdog and limit brake).",
+      "category": "productivity"
+    },
     {
       "name": "limits-band",
       "source": "./plugins/limits-band",
-      "description": "Band above the prompt: 5h/7d Claude.ai limits with reset timers, context fill, cache hit rate, and what eats your context"
+      "description": "Just the band: 5h/7d limits with reset timers, context fill, cache hit rate and what fills your context.",
+      "category": "productivity"
     },
     {
       "name": "limit-guard",
       "source": "./plugins/limit-guard",
-      "description": "Warns when the prompt cache is invalidated; near the 5h cap blocks subagents and wide scans and asks Claude for short answers"
+      "description": "Just the guard: cache-invalidation warnings; near the 5h cap blocks subagents and wide scans and asks for short answers.",
+      "category": "productivity"
     }
-  ],
-  "description": "Claude Code mods for keeping an eye on Claude.ai limits"
+  ]
 }

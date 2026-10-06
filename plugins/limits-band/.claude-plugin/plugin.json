@@ -1,10 +1,19 @@
 {
   "name": "limits-band",
   "version": "0.1.0",
-  "description": "Band above the prompt: 5h/7d Claude.ai limits, context fill, and what eats tokens (cache, system prompt, tools, messages)",
-  "types": "./types/index.d.ts",
+  "description": "Band above the prompt: 5h/7d limits with reset timers, context fill, cache hit rate and what fills your context.",
   "author": {
     "name": "Talap-creator"
   },
-  "repository": "https://github.com/Talap-creator/claude-mods"
+  "homepage": "https://github.com/Talap-creator/burnrate",
+  "repository": "https://github.com/Talap-creator/burnrate",
+  "license": "MIT",
+  "keywords": [
+    "usage",
+    "limits",
+    "rate-limit",
+    "prompt-cache",
+    "tokens"
+  ],
+  "types": "./types/index.d.ts"
 }

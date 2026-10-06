@@ -1,7 +1,7 @@
 {
-  "name": "limit-guard",
+  "name": "burnrate",
   "version": "0.1.0",
-  "description": "Warns when the prompt cache is invalidated; near the 5h cap blocks subagents and wide scans and asks Claude for short answers.",
+  "description": "Full mod: live limits band above the prompt plus the guard (cache watchdog and limit brake).",
   "author": {
     "name": "Talap-creator"
   },
