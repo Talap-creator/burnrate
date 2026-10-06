@@ -1,11 +1,19 @@
 {
   "name": "claude-mods",
-  "owner": { "name": "Talap-creator" },
+  "owner": {
+    "name": "Talap-creator"
+  },
   "plugins": [
     {
       "name": "limits-band",
       "source": "./plugins/limits-band",
       "description": "Band above the prompt: 5h/7d Claude.ai limits with reset timers, context fill, cache hit rate, and what eats your context"
+    },
+    {
+      "name": "limit-guard",
+      "source": "./plugins/limit-guard",
+      "description": "Warns when the prompt cache is invalidated; near the 5h cap blocks subagents and wide scans and asks Claude for short answers"
     }
-  ]
+  ],
+  "description": "Claude Code mods for keeping an eye on Claude.ai limits"
 }

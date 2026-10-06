@@ -1,0 +1,6 @@
+{
+  "name": "limit-guard",
+  "version": "0.1.0",
+  "description": "Saves your Claude.ai limits: warns when the prompt cache is invalidated, and near the 5h cap blocks subagents and wide scans and asks for short answers",
+  "author": { "name": "Talap-creator" }
+}
