@@ -1,0 +1,10 @@
+{
+  "name": "limits-band",
+  "version": "0.1.0",
+  "description": "Band above the prompt: 5h/7d Claude.ai limits, context fill, and what eats tokens (cache, system prompt, tools, messages)",
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "Talap-creator"
+  },
+  "repository": "https://github.com/Talap-creator/claude-mods"
+}

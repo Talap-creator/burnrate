@@ -1,0 +1,11 @@
+{
+  "name": "claude-mods",
+  "owner": { "name": "Talap-creator" },
+  "plugins": [
+    {
+      "name": "limits-band",
+      "source": "./plugins/limits-band",
+      "description": "Band above the prompt: 5h/7d Claude.ai limits with reset timers, context fill, cache hit rate, and what eats your context"
+    }
+  ]
+}
