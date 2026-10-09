@@ -8,7 +8,7 @@ A [Claude Code mod](https://claude.dev/blog/getting-started-with-claude-code-mod
 
 [![license: MIT](https://img.shields.io/badge/license-MIT-d97757?style=flat-square)](LICENSE)
 [![Claude Code mod](https://img.shields.io/badge/Claude_Code-mod-1c1b1a?style=flat-square)](https://claude.dev/blog/getting-started-with-claude-code-mods/)
-[![version](https://img.shields.io/github/v/release/Talap-creator/burnrate?style=flat-square&color=6c9ef8)](https://github.com/Talap-creator/burnrate/releases)
+[![version](https://img.shields.io/github/v/release/burnrate-ai/burnrate?style=flat-square&color=6c9ef8)](https://github.com/burnrate-ai/burnrate/releases)
 
 <img src="docs/preview.svg" alt="burnrate band: 5h and 7d limit meters, context fill, cache hit rate, context composition, and guard toasts" width="860">
 
@@ -17,7 +17,7 @@ A [Claude Code mod](https://claude.dev/blog/getting-started-with-claude-code-mod
 ## Install
 
 ```
-/plugin marketplace add Talap-creator/burnrate
+/plugin marketplace add burnrate-ai/burnrate
 /plugin install burnrate@burnrate
 /reload-plugins
 ```

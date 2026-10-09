@@ -1,6 +1,6 @@
 {
   "name": "burnrate",
-  "owner": { "name": "Talap-creator", "url": "https://github.com/Talap-creator" },
+  "owner": { "name": "Burnrate", "url": "https://github.com/burnrate-ai" },
   "description": "See and slow down how fast Claude Code burns your Claude.ai limits",
   "plugins": [
     {

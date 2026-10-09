@@ -22,8 +22,8 @@ const turn = (usage: { r: number; w: number; model?: string }) =>
 test('brakes near the 5h cap: subagents and wide scans denied, short answers asked', async ($, on) => {
   mock.clock(on, { now: Date.parse('2099-01-01T00:00:00Z') })
   const toasts: string[] = []
-  on('ui.toast', (_$, e) => (toasts.push(String((e as { text: string }).text)), {}) as never)
-  on('ui.status', () => ({}) as never)
+  on('ui.toast', (_$, e) => (toasts.push(String((e as { text: string }).text)), { value: undefined }) as never)
+  on('ui.status', () => ({ value: undefined }) as never)
   on('session.measure', (_$, e) => ({ changed: e.changed }))
   on('tool.call', () => ({ result: 'ran' }) as never)
   on('prompt.submit', (_$, e) => ({ text: e.text, context: e.context }))
@@ -55,7 +55,7 @@ test('brakes near the 5h cap: subagents and wide scans denied, short answers ask
 test('warns when a turn rewrites the cache instead of reading it', async ($, on) => {
   const clock = mock.clock(on, { now: 0 })
   const toasts: string[] = []
-  on('ui.toast', (_$, e) => (toasts.push(String((e as { text: string }).text)), {}) as never)
+  on('ui.toast', (_$, e) => (toasts.push(String((e as { text: string }).text)), { value: undefined }) as never)
   on('turn.complete', (_$, e) => ({ text: e.answer, usage: e.usage }))
 
   await $.turn.complete(turn({ r: 0, w: 60000 }))

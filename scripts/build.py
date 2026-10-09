@@ -12,7 +12,7 @@ import shutil
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = ROOT / "src"
 VERSION = (ROOT / "VERSION").read_text(encoding="utf8").strip()
-REPO = "https://github.com/Talap-creator/burnrate"
+REPO = "https://github.com/burnrate-ai/burnrate"
 
 PLUGINS = {
     "burnrate": {
